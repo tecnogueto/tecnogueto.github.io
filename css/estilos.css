@@ -39,6 +39,8 @@ body {
   -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
   box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
   -webkit-animation: slide-down 0.7s;
+  width: 100%;
+  position: fixed;
 }
 
 .cabecalho .conteudo {
@@ -81,4 +83,78 @@ body {
 .menu-principal a:hover,
 .midias-sociais a:hover {
   color: var(--cor-verde);
+}
+
+.sobre {
+  padding: 3.125rem 0;
+  background-color: var(--cor-verde);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sobre .linha {
+  display: flex;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coluna {
+  width: 45%;
+}
+
+.imagem-responsiva {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imagem-redonda {
+  border-radius: 50rem;
+  border: 10px solid #fff;
+}
+
+.apresentacao,
+.localizacao {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.profissao {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.botoes {
+  margin-top: 3rem;
+}
+
+.botao {
+  padding: 1rem 1.5rem;
+  background-color: var(--cor-cinza);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+
+.botao:hover {
+  opacity: 0.8;
+}
+
+.botao-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+  margin-left: 1rem;
+}
+
+.botao-link:hover {
+  text-decoration: underline;
 }
