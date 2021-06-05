@@ -11,9 +11,74 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cor-roxo: #a836d9;
+  --cor-azul: #020873;
+  --cor-azul-escuro: #020540;
+  --cor-cinza: #010326;
+  --cor-verde: #abd904;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #333;
+  color: var(--cor-cinza);
+  background-color: #f1f1f1;
+}
+
+.conteudo {
+  width: 80%;
+  max-width: 71.25rem;
+  margin: 0 auto 0 auto;
+}
+
+.cabecalho {
+  background: #fff;
+  padding: 1.25rem 0;
+  -webkit-box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+  -webkit-animation: slide-down 0.7s;
+}
+
+.cabecalho .conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--cor-cinza);
+  width: 20%;
+}
+
+.menu-principal {
+  width: 65%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.midias-sociais {
+  width: 7%;
+  margin-left: 1rem;
+}
+
+.menu-principal ul,
+.midias-sociais {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-principal a,
+.midias-sociais a {
+  color: var(--cor-cinza);
+  text-decoration: none;
+}
+
+.menu-principal a:hover,
+.midias-sociais a:hover {
+  color: var(--cor-verde);
 }
