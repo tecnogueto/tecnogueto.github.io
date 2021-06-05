@@ -1,1 +1,1 @@
-# Projeto do curos da Tecnogueto
+# Projeto do cursos da Tecnogueto
